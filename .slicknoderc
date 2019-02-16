@@ -1,0 +1,11 @@
+{
+  "default": {
+    "endpoint": "https://slicknode-games-3331d560.us-east1.slicknode.com",
+    "version": "UHJvamVjdFZlcnNpb246MTA3",
+    "alias": "slicknode-games-3331d560",
+    "consoleUrl": "https://console.slicknode.com/p/slicknode-games-3331d560",
+    "playgroundUrl": "https://console.slicknode.com/p/slicknode-games-3331d560/playground",
+    "name": "slicknode-games",
+    "id": "UHJvamVjdDozMA"
+  }
+}

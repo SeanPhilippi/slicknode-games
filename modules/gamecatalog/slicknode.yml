@@ -1,0 +1,4 @@
+module:
+  id: '@private/gamecatalog'
+  label: Gamecatalog
+  namespace: Gamecatalog
