@@ -1,32 +1,17 @@
-"""
-global user
-"""
-type Catalog_User implements Node & TimeStampedInterface {
-  id: ID!
-  author: User!
-  createdAt: DateTime!
-  games: [Catalog_games!] @relation(path: "Catalog_User=user.Catalog_Game")
+
+extend type User {
+  Gamecatalog_games: [Gamecatalog_Game] @relation(path: "User=user.Gamecatalog_Game")
 }
 
 """
 games
 """
-type Catalog_Game implements Node & TimeStampedInterface {
+type Gamecatalog_Game implements Node {
   id: ID!
-  title: String!
-  involvedCompanies: [Catalog_Companies!] @relation(path: "Catalog_Games=game.Catalog_Companies)
-  releaseDate: String!
-  description: Blog_Article!
-  url: DateTime!
-}
-
-"""
-involved companies
-"""
-type Catalog_Companies {
-  game: Catalog_Game!
-  developer: String!
-  company: String!
-  publishers: String!
-  companyLogo: String!
+  title: String
+  releaseDate: String
+  description: String
+  company: String
+  imgUrl: String
+  user: User
 }
